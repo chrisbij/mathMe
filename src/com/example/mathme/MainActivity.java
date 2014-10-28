@@ -1,6 +1,6 @@
 package com.example.mathme;
 
-
+import com.example.controler.*;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 	
 	TextView number1;
 	
-/*	Control control;*/
+	Control control;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
