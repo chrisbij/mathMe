@@ -35,11 +35,7 @@ public class MainActivity extends Activity {
 		
 		button1.setOnClickListener(click);
 		
-		/*gridView = (GridView) findViewById(R.id.gridView1);
-		gridView2 = (GridView) findViewById(R.id.gridView2);*/
 		
-	/*	gridView.setAdapter(new ImageAdapter(this, numbers));
-		gridView2.setAdapter(new ImageAdapter(this, signe));*/
 	}
 	
 	
