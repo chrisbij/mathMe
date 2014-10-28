@@ -32,9 +32,10 @@ public class MainActivity extends Activity {
 		
 		calcul = (TextView)findViewById(R.id.textView1);
 		button1 = (Button)findViewById(R.id.button1);
+		button2 = (Button)findViewById(R.id.button2);
 		
 		button1.setOnClickListener(click);
-		
+		button2.setOnClickListener(click);
 		
 	}
 	
@@ -44,7 +45,9 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			calcul.setText("1");
+			calcul.setText("");
+			Button b = (Button)v;
+			calcul.setText(b.getText().toString());
 		}
 	};
 	
