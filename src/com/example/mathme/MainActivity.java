@@ -1,5 +1,7 @@
 package com.example.mathme;
 
+
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -21,7 +23,9 @@ public class MainActivity extends Activity {
 	
 	Button valider;
 	
-	TextView calcul;
+	TextView number1;
+	
+/*	Control control;*/
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +34,26 @@ public class MainActivity extends Activity {
 		
 		setContentView(R.layout.activity_main);
 		
-		calcul = (TextView)findViewById(R.id.textView1);
+		number1 = (TextView)findViewById(R.id.textView1);
 		button1 = (Button)findViewById(R.id.button1);
 		button2 = (Button)findViewById(R.id.button2);
+		button3 = (Button)findViewById(R.id.button3);
+		button4 = (Button)findViewById(R.id.button4);
+		button5 = (Button)findViewById(R.id.button5);
+		button6 = (Button)findViewById(R.id.button6);
+		button7 = (Button)findViewById(R.id.button7);
+		button8 = (Button)findViewById(R.id.button8);
+		button9 = (Button)findViewById(R.id.button9);
 		
 		button1.setOnClickListener(click);
 		button2.setOnClickListener(click);
+		button3.setOnClickListener(click);
+		button4.setOnClickListener(click);
+		button5.setOnClickListener(click);
+		button6.setOnClickListener(click);
+		button7.setOnClickListener(click);
+		button8.setOnClickListener(click);
+		button9.setOnClickListener(click);
 		
 	}
 	
@@ -45,11 +63,16 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			calcul.setText("");
+			
+			/*control.textViewVide(number1);*/
+			
+			number1.setText("");
 			Button b = (Button)v;
-			calcul.setText(b.getText().toString());
+			number1.setText(b.getText().toString());
 		}
 	};
+	
+	
 	
 
 	@Override
